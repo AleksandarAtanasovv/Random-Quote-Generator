@@ -16,8 +16,6 @@ function generateQuote() {
 
   if (typeof quotes !== "undefined") {
     for (let i = 0; i < quotes.length; i++) {
-      const parsedQuote = quotes[i];
-      console.log(parsedQuote);
       p.innerHTML = quotes;
     }
   } else {
@@ -33,17 +31,14 @@ function newQuote() {
     p.classList.add("visible");
   });
 }
-newQuote();
-
 function getNewQuote() {
   index = 0;
   const quotes = quote[index];
 
   if (typeof quotes !== "undefined") {
     for (let i = 0; i < quotes.length; i++) {
-      const parsedQuote = quotes[i];
-      console.log(parsedQuote);
       p.innerHTML = quotes;
     }
   }
 }
+newQuote();
