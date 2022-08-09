@@ -18,7 +18,12 @@ body{
     flex-direction: column;
 }
 .btn{
-    
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #8f94fb,#4e54c8);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
 }
 .quote.visible{
    width: 50%;
@@ -35,5 +40,15 @@ body{
     transform: scale(1.5)
 }
 .author.visible{
-    
+     width: 20%;
+   height: 20%;
+   background: linear-gradient(90deg, #8f94fb,#4e54c8);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 5px;
+   padding: 5px;
+   font-size: 20px;
+   color: #fff;
+   transition: ease-in .2s;
+   text-align: center
 }
+
