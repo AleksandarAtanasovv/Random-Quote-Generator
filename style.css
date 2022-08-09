@@ -1,41 +1,39 @@
-*{
+*, ::before, ::after{
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 body{
-    background-color: gray;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(90deg, #4e54c8,#8f94fb);
+    overflow: hidden; 
     height: 100vh;
-    overflow: hidden;
-    margin: 0;
-}
-
-.btn{
-    margin-top: 100px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    text-align: center;
-    justify-items: center;
-    cursor: pointer;
-    color: black;
-    background-color: cadetblue;
-    border: none;
-    border-radius: 50px;
-    width: 200px;
+    width: 100vw;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn{
+    
 }
 .quote.visible{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    background-color: orange;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 0 5px 10px 0;
-    font-size: 25px;
+   width: 50%;
+   height: 50%;
+   background: linear-gradient(90deg, #8f94fb,#4e54c8);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 20px;
+   padding: 20px;
+   font-size: 20px;
+   color: #fff;
+   transition: ease-in .2s
+}
+.quote.visible:hover{
+    transform: scale(1.5)
+}
+.author.visible{
+    
 }
